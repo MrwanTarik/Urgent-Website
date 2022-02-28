@@ -252,6 +252,7 @@ header .landing .landing-content .eclipse {
 #our-subsidaries .service-container .eclipse-two {
   position: absolute;
   left: -87px;
+  z-index: -1;
 }
 #our-subsidaries .service-container:nth-of-type(2),
 #our-subsidaries .service-container:nth-of-type(4),
@@ -272,6 +273,16 @@ header .landing .landing-content .eclipse {
     margin-left: 20px;
     display: flex;
   }
+  #our-subsidaries .two-logos-container-2 {
+    margin-left: 39px;
+    flex-direction: column;
+    display: flex;
+    margin-right: 20px;
+  }
+  #our-subsidaries .two-logos-container-2 img {
+    width: 125px !important;
+  }
+  
   #our-subsidaries .box-container .mar-two-logs{
     margin-left: 6px;
   }
@@ -361,7 +372,6 @@ header .landing .landing-content .eclipse {
 #footer .footer-links-container .links-holder {
   display: flex;
   justify-content: space-between;
-  
 }
 #footer .footer-links-container .links-holder a {
   text-decoration: none;
@@ -505,6 +515,9 @@ div.swiper {
   }
   header .landing .landing-content .eclipse{
     display:none;
+  }
+  #our-subsidaries .box-container .box-content .lirc-list{
+    list-style: none;
   }
 }
 @media(max-width:567px){
