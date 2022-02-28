@@ -209,6 +209,18 @@ header .landing .landing-content .eclipse {
 #our-subsidaries .box-container .box-content {
   margin-left: 40px;
 }
+#our-subsidaries .box-container .box-content .lirc-list {
+  list-style: disc;
+  font-size: 16px;
+  opacity: 80%;
+  color: white;
+  line-height: 24px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 30px;
+}
+#our-subsidaries .box-container .box-content .lirc-list li {
+  padding-bottom: 10px;
+}
 #our-subsidaries .box-container .box-content h3 {
   font-size: 32px;
   color: #1EAFE6;
