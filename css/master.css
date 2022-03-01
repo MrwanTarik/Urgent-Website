@@ -341,7 +341,10 @@ header .landing .landing-content .eclipse {
 #email-form .form-header {
   display: flex;
   justify-content: center;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
+}
+#email-form .form-header span {
+  color: #1EAFE6;
 }
 #email-form h3{
   font-size: 48px;
@@ -354,20 +357,32 @@ header .landing .landing-content .eclipse {
   max-width: 600px;
 }
 #email-form .form-content-container {
-  display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
-#email-form .form-content-container .email-container{
+@media(max-width:767px){
+  #email-form .form-content-container{
+    text-align: center;
+  }
+}
+#email-form .form-content-container .email-container,
+#email-form .form-content-container .phone-number ,
+#email-form .form-content-container .name-container,
+#email-form .form-content-container textarea{
   display: flex;
-  flex-basis: 50%;
+  flex-basis: 66%;
+  flex-direction: column;
+}
+#email-form .form-content-container textarea {
+  width: 100%;
 }
 #email-form form .holder-container {
   display: flex;
   align-items: start;
   justify-content: space-between;
-  flex-basis: 40%;
-  max-width: 69%;
   margin: auto;
+}
+#email-form form .holder-container .holder {
+  flex-basis: 66%;
 }
 #email-form form .holder-container .phone-address ul li{
   font-size: 18px;
@@ -386,18 +401,23 @@ header .landing .landing-content .eclipse {
     flex-direction: column;
     align-items: center;
   }
+  #email-form form .holder{
+    width: 100%;
+  }
 }
 
-#email-form .form-content-container .email-container input[type=email]{
+#email-form .form-content-container input,
+textarea{
   flex-basis: 65.6666%;
-  border: 2px solid #1EAFE6;
+  border: 1px solid #1EAFE6;
   background: transparent;
   padding: 23px;
   border-radius: 20px;
   color: white;
-  outline:none
+  outline:none;
+  margin-bottom: 20px;
 }
-#email-form .form-content-container .email-container button {
+#email-form .form-content-container  button {
   flex-basis: 27.5%;
   background-color: #1EAFE6;
   padding: 21px 59px;
@@ -411,7 +431,8 @@ header .landing .landing-content .eclipse {
   border: none;
   outline: none;
 }
-#email-form .form-content-container .email-container input::placeholder{
+#email-form .form-content-container  input::placeholder,
+textarea::placeholder{
   color: white;
   font-size: 14px;
 }
