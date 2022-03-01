@@ -297,6 +297,43 @@ header .landing .landing-content .eclipse {
   }
 }
 /* End our subsidaries */
+/* About US */
+#about-us h2{
+  color:white;
+  font-size: 48px;
+  font-family: "RockoFLF Regular";
+  font-weight: normal;
+  line-height: 80px;
+  padding: 0 20px;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-top: 80px;
+}
+#about-us h2 span {
+  color: #1EAFE6;
+}
+
+#about-us p {
+  color: white;
+  font-family: "RockoFLF Regular";
+  max-width: 70%;
+  margin: auto;
+  padding-bottom: 20px;
+  font-size: 16px;
+  opacity: 80%;
+  line-height: 24px;
+}
+@media(min-width:768px) and (max-width:991px){
+  #about-us p {
+    max-width: 90%;
+  }
+}
+@media(max-width:767px){
+  #about-us p{
+    max-width: 90%;
+  }
+}
+/* End */
 /* Start email form */
 #email-form {
   padding-top: 100px;
@@ -304,7 +341,7 @@ header .landing .landing-content .eclipse {
 #email-form .form-header {
   display: flex;
   justify-content: center;
-  padding-bottom: 90px;
+  padding-bottom: 80px;
 }
 #email-form h3{
   font-size: 48px;
@@ -324,6 +361,33 @@ header .landing .landing-content .eclipse {
   display: flex;
   flex-basis: 50%;
 }
+#email-form form .holder-container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-basis: 40%;
+  max-width: 69%;
+  margin: auto;
+}
+#email-form form .holder-container .phone-address ul li{
+  font-size: 18px;
+  color: white;
+  font-family: "RockoFLF Regular";
+  font-weight: normal;
+  opacity: 80%;
+  padding-bottom: 10px;
+  line-height: 24px;
+}
+@media(max-width:991px){
+  #email-form form .holder-container .phone-address {
+    padding-top: 40px;
+  }
+  #email-form form .holder-container{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 #email-form .form-content-container .email-container input[type=email]{
   flex-basis: 65.6666%;
   border: 2px solid #1EAFE6;
@@ -371,7 +435,7 @@ header .landing .landing-content .eclipse {
 }
 #footer .footer-links-container .links-holder {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 #footer .footer-links-container .links-holder a {
   text-decoration: none;
